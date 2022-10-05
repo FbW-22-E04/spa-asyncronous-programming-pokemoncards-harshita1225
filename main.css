@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: brown;
+  font-size: 62.5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: rows;
+  gap: 1rem;
+  width: 50%;
+
+  justify-content: center;
+  margin: 5rem auto;
+}
+#search {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 30%;
+  border: none;
+}
+
+#submit {
+  background-color: rgb(204, 170, 76);
+  color: antiquewhite;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.card-container {
+  background-color: rgb(204, 170, 76);
+  color: antiquewhite;
+  width: 17rem;
+  padding: 2rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  margin: auto;
+  display: none;
+}
+
+#pokemon-name {
+  text-align: center;
+  color: brown;
+  font-style: oblique;
+  font-weight: 900;
+}
+
+img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid grey;
+  margin: 1rem 3rem;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  margin: auto -1rem;
+  width: 100%;
+}
+
+.card-heading {
+  text-align: center;
+  background-color: rgb(143, 82, 47);
+}
+
+span {
+  float: right;
+}
