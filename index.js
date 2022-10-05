@@ -34,9 +34,9 @@ async function fetchPokemon(e) {
   const name = search.value.toLowerCase();
   try {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
-    if (response.status === 200) {
+    if (response.status == 200) {
       const data = await response.json();
-
+      console.log(response);
       console.log(data);
 
       pokemonName.textContent = `${name}`.toLocaleUpperCase();
@@ -45,9 +45,11 @@ async function fetchPokemon(e) {
       const pokemonabilities = data.abilities;
 
       for (let i of pokemonabilities) {
-        //console.log(i.ability.name);
-        abilitiesHTML.appendChild(document.createElement("li")).textContent =
-          i.ability.name;
+        if (!abilitiesHTML.innerText.includes(i.ability.name)) {
+          abilitiesHTML.appendChild(document.createElement("li")).textContent =
+            i.ability.name;
+          //console.log(abilitiesHTML.innerText.includes(i.ability.name));
+        }
       }
       //console.log(data.abilities[0].ability.name);
 
