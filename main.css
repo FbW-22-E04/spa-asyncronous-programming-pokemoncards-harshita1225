@@ -8,6 +8,15 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
 }
 
+h1 {
+  background-color: rgb(218, 213, 143);
+  color: rgb(110, 69, 69);
+
+  margin: 5rem 25rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
 .container {
   display: flex;
   flex-direction: rows;
@@ -22,6 +31,8 @@ body {
   border-radius: 0.5rem;
   width: 30%;
   border: none;
+  background-color: antiquewhite;
+  font-size: 1rem;
 }
 
 #submit {
@@ -55,7 +66,7 @@ img {
   height: 7rem;
   object-fit: contain;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 5px solid grey;
   margin: 1rem 3rem;
 }
 ul {

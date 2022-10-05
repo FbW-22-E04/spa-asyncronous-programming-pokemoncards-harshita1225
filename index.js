@@ -34,7 +34,7 @@ async function fetchPokemon(e) {
   const name = search.value.toLowerCase();
   try {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
-    if (response.ok) {
+    if (response.status === 200) {
       const data = await response.json();
 
       console.log(data);
